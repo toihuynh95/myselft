@@ -1,0 +1,55 @@
+https://hub.docker.com/
+https://hub.docker.com/r/quangthinhnguyen91/vpssim/
+linkhost win:C:\Windows\System32\drivers\etc
+Front-end
+	https://www.virtualbox.org/wiki/Downloads
+
+
+Tải máy ảo Ubuntu trên Virtualbox
+	https://drive.google.com/file/d/1TUBekrF_NXDYiLTYQATslsL29GynmD8s/view?usp=sharing
+
+
+ifconfig => Xem thong tin IP
+
+Sample:
+	root@192.168.10.120
+
+
+Docker 
+	Docker ps => Hien thi cac docker dang chay
+	docker ps -a => hien thi tat ca docker ( Ke ca khong chay )
+
+	Images
+
+
+- Tất cả dự án đều có file README.md
+	Ghi chép các thông tin cần thiết cho dự án.
+
+	
+docker run -it --privileged=true --name="hoang_dev_vps" -p 8000:80 -p 2222:22 quangthinhnguyen91/vpssim /usr/sbin/init
+
+
+Truy cap docker tu may ubuntu
+	docker exec -it thinh_dev_vps /bin/bash
+	
+Lenh VPSSIM
+	vpssim => Mo menu vpssim
+	Chon "1" De di vao menu tiep theo
+	Cho "1" Add domain
+	Nhap domain can them:
+		daicahoang.local
+		Database: daicahoang__3473
+		User name: daicahoang3473
+		Password: 2f1e63beabd14ca0
+		
+Dat lai mat khau cho Linux
+	passwd <Ten nguoi dung> root
+	Nhap lai mat khau 2 lan
+	
+Cai dat ssh tren docker	
+	yum install openssh openssh-server
+De khoi dong may	
+	reboot
+Chay lai docker 
+	docker start <Ten docker >
+
