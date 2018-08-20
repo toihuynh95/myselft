@@ -1,0 +1,4 @@
+zip -r filename.zip ./ -x vendor/\* -x storage/app/\* -> Nen file tru thu muc va cac file trong thu muc
+touch filename.txt tao file
+rm -rf filename.zip Xoa file 
+
